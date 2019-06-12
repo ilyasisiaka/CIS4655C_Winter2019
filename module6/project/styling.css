@@ -1,0 +1,21 @@
+.title{
+/*    margin-top: 0.1%;*/
+    margin-left: 10px;
+    float: left;
+
+    color: #ee7410;
+}
+#submit{
+    margin-left: 100px;
+}
+#school{
+    margin-top: 2.2%;
+    margin-left: 15%;
+}
+.container{
+    width: 450px;
+    height: auto;
+    margin-left: 10px;
+    background-color: white;
+    
+}
