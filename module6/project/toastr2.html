@@ -3,34 +3,36 @@
       <title>toastr</title>
       <button class="alert">Click Me</button>
 
-      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-      <script>
-         // trigger when button click
-         $('.alert').on('click', function(){
-    Command: toastr["warning"]("Renew As Soon As Possible", "Your Subscription Expires in 7 days")
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
- toastr.options = {
-   "closeButton": true,
-   "debug": false,
-   "newestOnTop": false,
-   "progressBar": true,
-   "positionClass": "toast-top-right",
-   "preventDuplicates": false,
-   "onclick": null,
-   "showDuration": "1000",
-   "hideDuration": "1000",
-   "timeOut": "5000",
-   "extendedTimeOut": "1000",
-   "showEasing": "swing",
-   "hideEasing": "linear",
-   "showMethod": "fadeIn",
-   "hideMethod": "fadeOut"
- }
-      </script>
+
    </head>
    <body>
+     <script src="https:https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script  src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+     <script>
+       document.getElementById('updateDetails')
+       .addEventListener('click', function(){
+         toastr["warning"]('Renew As Soon As Possible', 'Your Subscription Expires in 7 days')
 
+      toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "1000",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
+       })
+     </script>
    </body>
 </html>
